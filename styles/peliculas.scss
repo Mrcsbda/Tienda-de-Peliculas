@@ -1,0 +1,181 @@
+$primary-color: rgb(15, 14, 23);
+$second-color: rgb(34, 31, 51);
+$alumni-sans: "Alumni Sans", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $primary-color;
+}
+
+nav {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  padding: 15px 35px;
+  justify-content: space-between;
+  background-color: $second-color;
+
+  img {
+    height: 100%;
+  }
+  ul {
+    gap: 35px;
+    display: flex;
+    font-size: 35px;
+    list-style: none;
+    align-items: center;
+    font-family: $alumni-sans;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      color: rgb(209, 209, 211);
+    }
+  }
+}
+
+article {
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .image-container {
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid $second-color;
+
+    div{
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .batman {
+      background-image: url(../images/batman.jpg);
+    }
+
+    .spiderman {
+      background-image: url(../images/spiderman.jpg);
+    }
+
+    .doctor-strange {
+      background-image: url(../images/doctor\ strange.webp);
+    }
+
+    .uncharted {
+      background-image: url(../images/uncharted.jpg);
+    }
+
+    .jurassic-world {
+      background-image: url(../images/jurassic\ World.webp);
+    }
+
+    .morbius {
+      background-image: url(../images/morbius.webp);
+    }
+  }
+
+  .description-container {
+    width: 800px;
+    height: 100%;
+    display: flex;
+     color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px 0px 60px;
+    font-family: $alumni-sans;
+   
+    h1 {
+        height: 50px;
+        font-size: 50px;
+    }
+
+    h4{
+        font-size: 16px;
+        padding: 0px 5px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        width: 460px;
+        height: 260px;
+        border-radius: 10px;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  padding: 3px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $second-color;
+
+  .redes {
+    gap: 15px;
+    height: 60%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    filter: invert(100%) sepia(96%) saturate(17%) hue-rotate(281deg)
+      brightness(103%) contrast(107%);
+  }
+
+  .otros {
+    gap: 15px;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    justify-content: center;
+    font-family: $alumni-sans;
+  }
+
+  img:hover,
+  span:hover {
+    cursor: pointer;
+  }
+}
